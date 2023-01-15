@@ -1,5 +1,6 @@
-import s from "./style.module.css";
-
 export function Car(props) {
-    return <p className={s.someClass}>Mustang</p>;
+    function onClick() {
+        props.onCarClick(2);
+    }
+    return <p onClick={onClick}>I am the {"<Car />"}</p>;
 }

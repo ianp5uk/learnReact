@@ -1,9 +1,13 @@
+import { MenuList } from "./components/MenuList/MenuList";
 import { DisplayDifficulty } from "./components/DisplayDifficulty/DisplayDifficulty";
-import { MenuListItem } from "./components/MenuListItem/MenuListItem";
+import s from "./style.module.css";
 
 export function App() {
-    return <div>
-        <MenuListItem difficulty="Low"/>
-        {/*<DisplayDifficulty difficulty={"Low"} />*/}
-    </div>;
+    return(
+        <div className={s.workspace}>
+            <h1>Select your difficulty</h1>
+            <div className={s.workspace}></div>
+            <MenuList />
+            <DisplayDifficulty difficulty="" />
+        </div>);
 }

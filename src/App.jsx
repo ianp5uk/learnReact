@@ -3,11 +3,12 @@ import { DisplayDifficulty } from "./components/DisplayDifficulty/DisplayDifficu
 import s from "./style.module.css";
 
 export function App() {
-    return(
-        <div className={s.workspace}>
+    return(            
+        <div>
             <h1>Select your difficulty</h1>
-            <div className={s.workspace}></div>
-            <MenuList />
-            <DisplayDifficulty difficulty="" />
-        </div>);
+            <div className={s.workspace}>
+                <MenuList />
+                <DisplayDifficulty difficulty="" />
+            </div>
+        </div>)
 }

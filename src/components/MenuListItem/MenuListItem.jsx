@@ -4,11 +4,11 @@ export const MenuListItem = (props) => {
 
     const [isHovered, setIsHover] = useState(false);
 
-    function activate() {
-        setIsHover(true)
+    const activate = () => {
+        setIsHover(true);
     };
-    function deactivate() {
-        setIsHover(false)
+    const deactivate = () => {
+        setIsHover(false);
     };
     function getBackgroundColor() {
         if (isHovered) {
@@ -35,4 +35,4 @@ export const MenuListItem = (props) => {
         >
         Set to : {props.difficulty}
     </div>
-};
+}

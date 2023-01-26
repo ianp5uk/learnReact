@@ -3,6 +3,7 @@ import { DisplayDifficulty } from "./components/DisplayDifficulty/DisplayDifficu
 import s from "./style.module.css";
 import { useState } from "react";
 
+
 export function App() {
     const [currentDifficulty, setCurrentDifficulty] = useState("");
 

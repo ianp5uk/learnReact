@@ -1,0 +1,1 @@
+export const DIFFICULTIES = ["Amoeba", "Low", "Medium", "High", "Insane"];
